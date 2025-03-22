@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Access</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="particles"></div>
+    
+    <div class="gradient-overlay"></div>
+    
+    <div class="container">
+        <!-- Permission request card -->
+        <div class="permission-card">
+            <div class="card-header">
+                <h1>Hello <span class="name">there</span>!</h1>
+                <div class="divider"></div>
+                <p class="subtitle">A Heartfelt Request</p>
+            </div>
+            <div class="card-content">
+                <div class="icon-container">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="message-main">With utmost sincerity, I've crafted something deeply personal that I wish to share with you—a reflection of my genuine emotions and deepest thoughts.</p>
+                <p class="message-secondary">Your comfort and feelings are of paramount importance to me. It is with great respect that I formally request your permission before revealing what I've prepared with such care.</p>
+                <p class="message-note">This means the world to me, and I hope that you will find it meaningful. Your response matters immensely.</p>
+                <div class="btn-group">
+                    <button id="yes-btn" class="btn btn-primary">
+                        <i class="fas fa-check-circle"></i>
+                        <span>I Grant Permission</span>
+                    </button>
+                    <button id="maybe-btn" class="btn btn-secondary">
+                        <i class="fas fa-clock"></i>
+                        <span>Perhaps Later</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Maybe later screen -->
+        <div class="maybe-screen hidden">
+            <div class="maybe-content">
+                <div class="card-header">
+                    <h1>I Understand</h1>
+                    <div class="divider"></div>
+                    <p class="subtitle">Your Comfort Matters</p>
+                </div>
+                <div class="card-content">
+                    <div class="icon-container">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <p>I sincerely appreciate your honesty. Timing is essential, and I respect your decision to view this when it feels right for you.</p>
+                    <p>Please know that I've invested my heart and soul into creating something meaningful that awaits your attention whenever you're ready.</p>
+                    <div class="btn-group">
+                        <button id="back-btn" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>Return</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confetti canvas for celebration effect -->
+    <canvas id="confetti-canvas" class="hidden"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
