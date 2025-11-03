@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Personalize the name
     const nameElement = document.querySelector('.name');
     if (nameElement) {
-        nameElement.textContent = 'Piyusha';
+        nameElement.textContent = 'Aditi';
     }
 
     // Create animated particles
